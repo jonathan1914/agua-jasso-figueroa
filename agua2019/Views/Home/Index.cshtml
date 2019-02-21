@@ -1,0 +1,23 @@
+﻿<div class="container">
+      <div class="card-deck mb-3 text-center">
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Cuánto tiempo tardas bañandote</h4>
+          </div>
+          <div class="card-body">
+              <form action="/Home/Calcular">
+                    <div class="form-group">
+                      <label for="ProximoCumple">Próximo cumpleaños</label>
+                      <input type="date" class="form-control" id="ProximoCumple" name="ProximoCumple" required autofocus>
+                    </div>
+                    <div class="form-group">
+                      <label for="Minutos">Minutos</label>
+                      <input type="number" id="minutos" name="minutos" min="5" required>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Calcular</button>
+              </form>
+          </div>
+        </div>
+     </div>
+</div>

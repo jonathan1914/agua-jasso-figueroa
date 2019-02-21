@@ -1,0 +1,1 @@
+dotnet test ./agua2019.UnitTests/agua2019.UnitTests.csproj
