@@ -18,6 +18,8 @@ namespace agua2019.Controllers
 
         public IActionResult Calcular(DateTime ProximoCumple, int minutos)
         {
+
+            int Dias = DateTime.Today - ProximoCumple;
             /// Aquí tienen que hacer todo
             /// La fecha que y los minutos vienen del formulario 
             /// Investigar Model Binding 
