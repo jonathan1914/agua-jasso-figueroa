@@ -18,14 +18,17 @@ namespace agua2019.Controllers
 
         public IActionResult Calcular(DateTime ProximoCumple, int minutos)
         {
-
-            int Dias = DateTime.Today - ProximoCumple;
+    
             /// Aquí tienen que hacer todo
             /// La fecha que y los minutos vienen del formulario 
             /// Investigar Model Binding 
-  
+            int minutos , botellas;
+            botellas= minutos * 12; 
+           TimeSpan Dias;
+           Dias= ProximoCumple - DateTime.Today;
+           ViewBag.Dias= Dias.Days;
             var aguaViewModel = new AguaViewModel();
-          
+
             return View(aguaViewModel);
         }
 
